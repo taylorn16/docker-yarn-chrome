@@ -9,6 +9,6 @@ RUN apt-get update && \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list && \
     apt-get update && apt-get install -y --no-install-recommends yarn
 
-ENV CHROME_BIN /usr/bin/chromium
+ENV CHROME_BIN=/usr/bin/chromium
 
 WORKDIR /workspace
